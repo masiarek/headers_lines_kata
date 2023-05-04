@@ -23,14 +23,14 @@ class H:
             raise ValueError("Not a valid header number")
         self.hdr_n = hdr_n
         self.h_desc = new_desc
+        
+if __name__ == '__main__':
+    h1 = H("Desc")
+    dict_h = {}
+    dict_h[h1.hdr_n] = h1.h_desc
+    for _ in range(3):
+        temp = H()
+        dict_h[temp.hdr_n] = temp.h_desc
 
-
-h1 = H("Desc")
-dict_h = {}
-dict_h[h1.hdr_n] = h1.h_desc
-for _ in range(3):
-    temp = H()
-    dict_h[temp.hdr_n] = temp.h_desc
-
-for k, v in dict_h.items():
-    print(k, v)
+    for k, v in dict_h.items():
+        print(k, v)
