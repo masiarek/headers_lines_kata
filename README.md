@@ -1,9 +1,8 @@
 # headers_lines_kata
 
-Simulate a database like objects:
+Kata to practise OOP programming - simulate a database like objects:
 - headers (with multiple line items)
-- lines 
-
+- lines (linked to a single header) 
 
 H900 (Header blah blah)
 - L10 (Item x)
@@ -14,6 +13,4 @@ H901 (Header FooBar)
 - L10 (Item foo)
 - L20 (Item bar)
 
-H902 (Header Descr)
-- L10 (Item One)
-- L20 (Item Two)
+etc.
