@@ -1,7 +1,6 @@
 import random
 from dataclasses import dataclass
 import string
-import pytest
 
 random.seed(1)
 
@@ -23,6 +22,8 @@ class H:
             raise ValueError("Not a valid header number")
         self.hdr_n = hdr_n
         self.h_desc = new_desc
+    def __str__(self):
+        return f"\n{self.hdr_n}, {self.h_desc}"
         
 if __name__ == '__main__':
     h1 = H("Desc")
@@ -34,3 +35,6 @@ if __name__ == '__main__':
 
     for k, v in dict_h.items():
         print(k, v)
+
+    h1.change_desc(901,'des')
+    print(h1)
